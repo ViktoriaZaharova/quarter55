@@ -1,0 +1,27 @@
+/*==========  footer  ==========*/
+footer {
+  background: #383639;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 78px 0; }
+  footer:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    height: 1px;
+    width: calc(100% - 30px);
+    max-width: 1590px;
+    background: #e4dbd4; }
+
+.address {
+  margin: 0 76px 0 auto;
+  letter-spacing: 0.94px;
+  font-size: 15.7px; }
+
+/*==========  footer end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
