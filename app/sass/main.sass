@@ -3,6 +3,7 @@
 /*==========  section home ==========*/
 .home
   padding: 220px 0 0
+
   .container
     position: initial
 
@@ -10,6 +11,7 @@
   margin: 68px 0 -220px 0
   min-width: 2000px
   float: right
+
   &__nav
     display: flex
     flex-direction: column
@@ -17,13 +19,16 @@
     position: absolute
     left: 210px
     top: 228px
+
     .slick-arrow
       top: 0
       left: 0
       right: 0
       position: relative
+
     .slick-next
       margin: 47px 0 0
+
   .slick-slide
     margin: 0 125px 0 0
 
@@ -33,6 +38,7 @@
   display: flex
   align-items: center
   justify-content: center
+
   img
     width: 100%
 
@@ -65,6 +71,7 @@
 /*==========  section about  ==========*/
 .about
   padding: 252px 0 105px
+
   .btn
     margin: 0 0 0 auto
     padding: 0 80px
@@ -81,18 +88,22 @@
   display: flex
   align-items: center
   justify-content: center
+
   .number
     position: absolute
     color: rgba(56, 54, 56, 0.1)
     font-size: 193px
     left: 24%
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0)
     bottom: 0
     line-height: 1
+
   h3
     color: $accent
+
   &:last-child
     border: none
+
   &:nth-child(2)
     .number
       left: 30%
@@ -104,21 +115,26 @@
 .plans-slider
   min-width: 1213px
   float: right
+
   &__item
     width: 100%
     display: flex
     align-items: center
     justify-content: center
+
     img
       width: 100%
+
   &__nav
     display: flex
     align-items: flex-start
     justify-content: flex-start
+
     .slick-arrow
       position: relative
       left: 0
       top: 0
+
     .slick-prev
       margin: 0 30px 0 0
 
@@ -128,16 +144,16 @@
   display: flex
   flex-direction: column
   padding: 119px 20px 109px 70px
+
   h3
     margin: auto 0 67px
     font-size: 46.9px
     max-width: 455px
+    color: $accent2
 
 .list-characteristics
   width: 100%
-  display: flex
-  align-items: flex-start
-  flex-wrap: wrap
+
 
 .list-characteristics-item
   text-align: center
@@ -147,8 +163,10 @@
   margin: 0 72px 0 0
   max-width: 104px
   width: 100%
+
   &:last-child
     margin: 0
+
   &__icon
     height: 64px
     display: flex
@@ -157,22 +175,253 @@
     margin: 0 0 13px
 
 
-
 /*==========  section plans end  ==========*/
 
 /*==========  section variable-project ==========*/
 .variable-project
   margin: 84px 0 149px
 
+.variable-project-photo
+  min-width: 783px
+  display: flex
+  align-items: center
+  justify-content: center
+  float: right
+  margin: 0 auto 44px 0
+
+  img
+    width: 100%
+
+.variable-project-slider
+  min-width: 1107px
+  float: left
+
+  &__nav
+    position: absolute
+    left: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 20px 86px
+    background: $accent2
+    z-index: 1
+
+
+.variable-project-item
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
+    width: 100%
+
+.variable-project-content
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+
+
+.variable-nav
+  width: 100%
+  .slick-slide
+    margin: 0 0 45px
+    &:last-child
+      margin: 0
+  .slick-current
+    .variable-nav-item
+      opacity: 1
+
+.variable-nav-item
+  padding: 0 0 0 30px
+  text-transform: uppercase
+  color: #383638
+  font-size: 25.5px
+  letter-spacing: 0.51px
+  position: relative
+  opacity: .7
+  cursor: pointer
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 2px
+    height: 62px
+    background: #383639
+
+  h4
+    max-width: 440px
+
 /*==========  section variable-project end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section residential ==========*/
+.residential
+  h2
+    margin: 0 0 95px
 
-/*==========  section end  ==========*/
+.residential-content
+  padding: 90px 0 100px 75px
+  position: relative
+  z-index: 1
+  color: $accent2
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    min-width: 2000px
+    height: 100%
+    background: $accent
+    z-index: -1
+  h3
+    margin: 0 0 43px
+    color: #e4dbd4
+    font-size: 46.9px
+  .form-callback
+    margin: 76px 0 0
+
+.list-parameters
+  width: 100%
+  display: flex
+  align-items: flex-start
+  color: #e4dbd4
+  font-size: 17px
+  text-transform: uppercase
+  letter-spacing: 0.35px
+  p
+    font-size: 34px
+    letter-spacing: 0.69px
+    margin: 0 0 10px
+  sup
+    font-size: 18px
+    vertical-align: top
+  li
+    border-right: solid 1px #e4dbd4
+    padding: 10px 68px
+    &:first-child
+      padding-left: 0
+    &:last-child
+      border: none
+
+.form-callback
+  width: 100%
+  button
+    padding: 0 40px
+    height: 48px
+    font-size: 11px
+    margin: 0 0 0 auto
+  .checkbox
+    width: fit-content
+
+.checkbox
+  width: 100%
+  margin: 0
+  display: flex
+  align-items: center
+  color: #e4dbd4
+  font-size: 7px
+  text-transform: uppercase
+
+.inp-check
+  display: none
+
+.checkbox-custom
+  border: solid 1px #e4dbd4
+    radius: 50%
+  width: 24px
+  height: 24px
+  min-width: 24px
+  margin: 0 10px 0 0
+
+.inp-check:checked + .checkbox-custom
+  background: $accent2
+
+.checkbox-text
+  max-width: 218px
+
+.residential-slider
+  max-width: 671px
+  margin: 0 auto
+  width: 100%
+  &__nav
+    display: flex
+    align-items: center
+    .slick-arrow
+      border: solid 1px #383639
+
+
+.residential-item
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  mix-blend-mode: darken
+
+
+.residential-line
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 79px
+
+
+.links-download
+  margin: 0 52px 0 auto
+  text-decoration: underline
+  text-transform: uppercase
+  color: #383638
+  font-size: 17.3px
+  &:hover
+    color: #000
+
+.gallery-hidden
+  &__item
+    display: none
+
+.link-size
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 38px
+
+.residential-nav
+  width: 100%
+  margin: 125px 0 0
+  .slick-slide
+    color: rgba(56, 54, 56, 0.5)
+    margin: 0 57px 0 0
+    position: relative
+    padding: 0 0 14px
+    cursor: pointer
+    &:last-child
+      margin: 0
+  .slick-current
+    color: $accent
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 104px
+      height: 2px
+      background: #383639
+
+
+.residential-nav-item
+  font-size: 25.7px
+  text-transform: uppercase
+
+/*==========  section residential end  ==========*/
 
 /*==========  section courtyard ==========*/
 .courtyard
   margin: 143px 0 0
+
   h2
     margin: 0 0 88px
 
@@ -197,20 +446,96 @@
   margin: auto 0 0
   display: flex
   align-items: center
-  .slick-arrow
-    border: solid 1px #383639
-    img
-      filter: invert(1)
-  .slick-next
-    margin-left: 30px
+
 
 /*==========  section courtyard end  ==========*/
 
 
+/*==========  section commercial ==========*/
+.commercial
+  h2
+    text-align: right
+    margin: 0 0 76px -70px
+  .box-text
+    text-transform: uppercase
+    font-size: 25.7px
 
-/*==========  section  ==========*/
 
-/*==========  section end  ==========*/
+.commercial-img
+  display: flex
+  align-items: center
+  justify-content: center
+  float: right
+  min-width: 814px
+  margin: 0 0 122px
+
+.commercial-content
+  padding: 110px 0 0 30px
+  h3
+    padding: 0 10px 62px
+  .box-text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 58px 10px 0
+    border-top: solid 2px #e4dbd4
+
+.btn-download
+  padding: 0 74px
+  .btn-icon
+    width: 13px
+    min-width: 13px
+    margin: 0 0 0 36px
+
+.image-max
+  min-width: 1107px
+  float: left
+  display: flex
+  align-items: center
+  justify-content: center
+
+.commercial-box
+  padding: 113px 0 0
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    height: 2px
+    width: 2000px
+    background: #e4dbd4
+  .image
+    display: flex
+    align-items: center
+    justify-content: center
+    float: right
+    min-width: 779px
+    margin: 100px 0 98px
+  h3
+    max-width: 450px
+  .box-text
+    max-width: 540px
+    p
+      margin: 0 0 60px
+      &:last-child
+        margin: 0
+
+
+.area
+  letter-spacing: 1.83px
+  font-size: 91px
+  margin: 50px 0 0
+  span
+    letter-spacing: 0.69px
+    font-size: 34px
+    sup
+      font-size: 20px
+      //vertical-align: top
+
+/*==========  section commercial end  ==========*/
+
+
 
 /*==========  section contacts ==========*/
 .contacts-img
@@ -222,8 +547,10 @@
 
 .contacts-content
   padding: 105px 0 0 30px
+
   h3
     color: #383638
+
   .btn
     padding: 0 135px
     margin: 57px 0 0
@@ -233,17 +560,20 @@
 /*==========  section why ==========*/
 .why
   margin: 150px 0 165px
+
   h2
     margin: 0 0 87px
 
 .why-slider
   float: left
   min-width: 1136px
+
   &__item
     width: 100%
     display: flex
     align-items: center
     justify-content: center
+
     img
       width: 100%
 
@@ -253,23 +583,17 @@
   align-items: center
   justify-content: flex-start
   padding: 57px 73px 10px 0
-  .slick-arrow
-    position: relative
-    border: solid 1px #383639
-    top: 0
-    left: 0
-    right: 0
-    img
-      filter: invert(1)
-  .slick-prev
-    margin: 0 30px 0 0
+
+
   .slick-dots
     margin: 0 0 0 auto
 
 .why-content-slider
   padding: 0 30px 0 0
+
   p
     margin: 0 0 30px
+
     &:last-child
       margin: 0
 
@@ -279,6 +603,7 @@
   display: flex
   align-items: center
   letter-spacing: 0.32px
+
   &__default
     margin: 0 0 0 5px
 
@@ -292,10 +617,13 @@
     max-width: 613px
     font-size: 25.7px
     margin: 0 0 0 auto
+
     p
       margin: 0 0 30px
+
       &:last-child
         margin: 0
+
   h2
     margin: 0 0 80px
 
@@ -310,16 +638,6 @@
   align-items: center
   justify-content: center
   padding: 33px 80px
-  .slick-prev
-    margin: 0 30px 0 0
-  .slick-arrow
-    position: relative
-    left: 0
-    top: 0
-    transform: none
-    border: solid 1px #383639
-    img
-      filter: invert(1)
 
 .construction-progress-slider
   min-width: 1109px
@@ -332,15 +650,16 @@
   justify-content: center
 
 
-
 /*==========  section end  ==========*/
 
 /*==========  section booking ==========*/
 .booking
   border-bottom: solid 1px #e4dbd4
+
   h3
     margin: 0 0 56px
     max-width: 470px
+    color: $accent2
 
 .booking-content
   margin: 103px 0 108px
@@ -357,18 +676,24 @@
 /*==========  section documents ==========*/
 .documents
   padding: 157px 0 110px
+
   .box-text
     color: #e3dad3
+
+  h2
+    color: $accent2
 
 .documents-box
   margin: 58px 0 0 30px
   width: 100%
   max-width: 456px
   border: solid 1px #e4dbd4
-  height: 314px
-  padding: 47px 58px 10px
+  min-height: 314px
+  padding: 47px 58px 50px
+
   &:first-child
     margin-left: auto
+
   &__top
     width: 100%
     display: flex
@@ -377,22 +702,43 @@
     padding: 0 10px 20px 10px
     border-bottom: solid 1px #e4dbd4
     margin: 0 0 36px
+
+  &__body
+    width: 100%
+
   &__icon
     display: flex
     align-items: center
-    justify-content: center
-    max-width: 53px
+    justify-content: space-between
     width: 100%
+
+    &:after
+      content: ''
+      display: inline-block
+      width: 30px
+      height: 15px
+      background: url("../img/arrow-bottom.png") no-repeat center
+        size: 100%
+
+    img
+      max-width: 53px
+
   .icon-arrow
     display: flex
     align-items: center
     justify-content: center
     max-width: 30px
     width: 100%
+
   &__links
     color: #e3dad3
     font-size: 25.6px
     letter-spacing: 0.51px
+    margin: 0 0 20px
+
+    &:last-child
+      margin: 0
+
     &:hover
       color: #fff
 

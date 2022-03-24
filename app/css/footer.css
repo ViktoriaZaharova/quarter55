@@ -23,5 +23,53 @@ footer {
   font-size: 15.7px; }
 
 /*==========  footer end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  modal  ==========*/
+.modal-dialog {
+  max-width: 550px; }
+
+.modal-content {
+  border: none;
+    border-radius: 10px;
+  background: #383639;
+  color: #e4dbd4;
+  padding: 30px; }
+
+.modal-body {
+  padding: 0; }
+  .modal-body .form-callback button {
+    margin: 20px auto 0; }
+
+.modal-header {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 20px;
+  padding: 0;
+  border: none; }
+  .modal-header h3 {
+    width: 100%;
+    text-align: center; }
+  .modal-header .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 0;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    opacity: 1; }
+    .modal-header .close:before, .modal-header .close:after {
+      content: '';
+      position: absolute;
+      left: 12px;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: #e4dbd4; }
+    .modal-header .close:before {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .modal-header .close:after {
+      -webkit-transform: rotate(135deg);
+              transform: rotate(135deg); }
+
+/*==========  modal end  ==========*/

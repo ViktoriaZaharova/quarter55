@@ -26,6 +26,52 @@ footer
 
 
 
-/*==========  section  ==========*/
+/*==========  modal  ==========*/
+.modal-dialog
+  max-width: 550px
 
-/*==========  section end  ==========*/
+.modal-content
+  border: none
+    radius: 10px
+  background: $accent
+  color: $accent2
+  padding: 30px
+
+.modal-body
+  padding: 0
+  .form-callback
+    button
+      margin: 20px auto 0
+
+.modal-header
+  width: 100%
+  text-align: center
+  margin: 0 0 20px
+  padding: 0
+  border: none
+  h3
+    width: 100%
+    text-align: center
+  .close
+    position: absolute
+    right: 15px
+    top: 15px
+    padding: 0
+    margin: 0
+    width: 24px
+    height: 24px
+    opacity: 1
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 12px
+      top: 0
+      width: 1px
+      height: 100%
+      background: $accent2
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+
+/*==========  modal end  ==========*/

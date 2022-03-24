@@ -68,13 +68,28 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0;
+  padding: 0 21px;
+  color: rgba(228, 219, 212, 0.5);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Tenor Sans", sans-serif;
   border: none;
     border-radius: 0;
-  width: 100%; }
+  width: 100%;
+  border: solid 1px #e4dbd4;
+    border-radius: 30px;
+  height: 44px;
+  background: transparent;
+  font-size: 11px;
+  text-transform: uppercase; }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+    color: rgba(228, 219, 212, 0.5); }
+  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+    color: rgba(228, 219, 212, 0.5); }
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
+    color: rgba(228, 219, 212, 0.5); }
+  input::placeholder, textarea::placeholder, select::placeholder {
+    color: rgba(228, 219, 212, 0.5); }
   input:hover, textarea:hover, select:hover {
     outline: none;
     -webkit-box-shadow: none;
@@ -82,7 +97,23 @@ input, textarea, select {
 
 label {
   display: block;
-  width: 100%; }
+  width: 100%;
+  margin: 0 0 16px; }
+
+.form-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0; }
+  .form-group label {
+    width: calc(50% - 8px); }
 
 button, .btn {
   outline: none;
@@ -152,7 +183,7 @@ strong, b {
 
 .bg-accent {
   background: #383639;
-  color: #383639; }
+  color: #e4dbd4; }
 
 .container {
   max-width: 1620px; }
@@ -249,3 +280,12 @@ h3 {
       display: none; }
   .slick-dots .slick-active {
     opacity: 1; }
+
+.slider-nav-black .slick-arrow {
+  border: solid 1px #383639; }
+  .slider-nav-black .slick-arrow img {
+    -webkit-filter: invert(1);
+            filter: invert(1); }
+
+.slider-nav-black .slick-prev {
+  margin: 0 30px 0 0; }

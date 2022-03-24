@@ -67,25 +67,46 @@ a
 
   &:hover, &:focus
     text-decoration: none
-    
+
 input, textarea, select
   outline: none
   box-shadow: none
   appearance: none
-  padding: 0
+  padding: 0 21px
+  color: rgba(228, 219, 212, 0.5)
   box-sizing: border-box
   font-family: $default-font
   border: none
     radius: 0
   width: 100%
+  border: solid 1px #e4dbd4
+    radius: 30px
+  height: 44px
+  background: transparent
+  font-size: 11px
+  text-transform: uppercase
+  &::placeholder
+    color: rgba(228, 219, 212, 0.5)
   &:hover
     outline: none
     box-shadow: none
-  
+
 
 label
   display: block
   width: 100%
+  margin: 0 0 16px
+
+.form-group
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0
+  label
+    width: calc(50% - 8px)
+
+
 
 button, .btn
   outline: none
@@ -97,6 +118,7 @@ button, .btn
   margin: 0
   border: none
     radius: 0
+
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -117,6 +139,7 @@ button, .btn
   color: #383638
   background: $accent2
   letter-spacing: 0.32px
+
   &:hover
     color: #fff
     background: #000
@@ -124,6 +147,7 @@ button, .btn
 .btn-border
   border: solid 1px #383638
   height: 55px
+
   &:hover
     background: #383638
     color: $accent2
@@ -145,7 +169,7 @@ strong, b
 
 .bg-accent
   background: $accent
-  color: $accent
+  color: $accent2
 
 
 .container
@@ -161,6 +185,7 @@ h1
   display: flex
   align-items: center
   flex-wrap: wrap
+
   span
     display: block
     margin: 0 0 0 125px
@@ -213,6 +238,7 @@ h3
   display: flex
   align-items: center
   list-style: none
+
   li
     cursor: pointer
     width: 10px
@@ -221,9 +247,22 @@ h3
     margin: 0 33px 0 0
     opacity: .5
     background: #383639
+
     &:last-child
       margin: 0
+
     button
       display: none
+
   .slick-active
     opacity: 1
+
+.slider-nav-black
+  .slick-arrow
+    border: solid 1px #383639
+
+    img
+      filter: invert(1)
+
+  .slick-prev
+    margin: 0 30px 0 0

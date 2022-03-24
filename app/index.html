@@ -31,6 +31,29 @@
 
 <body>
 
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+  <ul class="menu my-ul">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="#about" data-toggle="go_to">о проекте</a></li>
+    <li><a href="#documents" class="go_to">Документация</a></li>
+    <li><a href="#contacts" class="go_to">контакты</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+         aria-expanded="false">недвижимость</a>
+      <div class="dropdown-menu">
+        <a href="#commercial" class="dropdown-item go_to">коммерческая
+          недвижимость</a>
+        <a href="#residential" class="dropdown-item go_to">Жилая недвижимость</a>
+      </div>
+    </li>
+  </ul>
+
+  <a href="tel:+78412515555" class="phone">+7 (8412) 51-55-55</a>
+</div>
+
 <!--### HEADER ###-->
 <header>
   <div class="container">
@@ -47,8 +70,9 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                aria-expanded="false">недвижимость</a>
             <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">menu</a>
-              <a href="#" class="dropdown-item">menu</a>
+              <a href="#commercial" class="dropdown-item go_to">коммерческая
+                недвижимость</a>
+              <a href="#residential" class="dropdown-item go_to">Жилая недвижимость</a>
             </div>
           </li>
         </ul>
@@ -108,11 +132,11 @@
 <section class="about" id="about">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-12 col-sm-6">
+      <div class="col-12 col-md-6">
         <h2>О проекте</h2>
       </div>
 
-      <div class="col-12 col-sm-6">
+      <div class="col-12 col-md-6">
         <a href="#" class="btn btn-border">узнать больше</a>
       </div>
     </div>
@@ -190,37 +214,37 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-5">
-        <div class="variable-project-review">
-          <div class="slide">
-            <div class="variable-project-preview-item"><img src="img/slide4.jpg" alt=""></div>
-          </div>
-          <div class="slide">
-            <div class="variable-project-preview-item"><img src="img/slide4.jpg" alt=""></div>
-          </div>
-          <div class="slide">
-            <div class="variable-project-preview-item"><img src="img/slide4.jpg" alt=""></div>
-          </div>
+        <div class="variable-project-photo">
+          <img src="img/slide4.jpg" alt="">
         </div>
 
-        <div class="variable-nav">
-          <div class="variable-nav-item active">
-            <h4>единая галерея холлов
-              с экспозицией
-              произведений искусств</h4>
-          </div>
-          <div class="variable-nav-item">
-            <h4>авторский дизайн-проект
-              отделки всех холлов</h4>
-          </div>
-          <div class="variable-nav-item">
-            <h4>современные
-              инженерные системы</h4>
+        <div class="variable-project-content">
+          <div class="variable-nav">
+            <div class="slide">
+              <div class="variable-nav-item">
+                <h4>единая галерея холлов
+                  с экспозицией
+                  произведений искусств</h4>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="variable-nav-item">
+                <h4>авторский дизайн-проект
+                  отделки всех холлов</h4>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="variable-nav-item">
+                <h4>современные
+                  инженерные системы</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="col-12 col-lg-7">
-        <div class="slider-nav variable-project-slider__nav"></div>
+        <div class="slider-nav slider-nav-black variable-project-slider__nav"></div>
         <div class="variable-project-slider">
           <div class="slide">
             <div class="variable-project-item"><img src="img/slide5.jpg" alt=""></div>
@@ -238,10 +262,87 @@
 </div>
 <!--### SECTION END ###-->
 
-<!--### SECTION  ###-->
-<section class="">
+<!--### SECTION residential ###-->
+<section class="residential" id="residential">
   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Жилая недвижимость</h2>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col-12 col-lg-7">
+        <div class="residential-line">
+          <div class="slider-nav slider-nav-black residential-slider__nav"></div>
+          <a href="#" class="links-download" target="_blank">скачать каталог планировок</a>
+
+          <div class="gallery-hidden">
+            <a href="img/plane.jpg" class="link-size" data-fancybox="image"><img src="img/border-icon.png" alt=""></a>
+            <a href="img/plane.jpg" class="gallery-hidden__item" data-fancybox="image"></a>
+          </div>
+        </div>
+
+        <div class="residential-slider">
+          <div class="slide">
+            <div class="residential-item"><img src="img/plane.jpg" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="residential-item"><img src="img/plane.jpg" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="residential-item"><img src="img/plane.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="residential-nav">
+          <div class="slide">
+            <div class="residential-nav-item">планировка</div>
+          </div>
+          <div class="slide">
+            <div class="residential-nav-item">расположение</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="residential-content">
+          <h3>2 комнатная
+            квартира</h3>
+
+          <ul class="list-parameters my-ul">
+            <li>
+              <p>70,05 м<sup>2</sup></p>
+              <span>площадь</span>
+            </li>
+            <li>
+              <p>2</p>
+              <span>спальни</span>
+            </li>
+          </ul>
+
+          <form method="post" class="form-callback">
+            <div class="form-group">
+              <label><input type="text" placeholder="Имя" name="name"></label>
+              <label><input type="text" placeholder="e-mail" name="mail"></label>
+            </div>
+            <label>
+              <label><input type="text" placeholder="телефон" name="phone"></label>
+            </label>
+
+            <div class="form-group">
+              <label class="checkbox">
+                <input type="checkbox" name="checkbox" class="inp-check">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">согласен на обработку персональных данных.
+Юридическая информация</span>
+              </label>
+              <button type="submit" class="btn btn-accent">забронировать квартиру</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <!--### SECTION END ###-->
@@ -263,7 +364,7 @@
             всем необходимым, для
             времяпрепровождения жильцов
             комплекса.</h3>
-          <div class="slider-nav courtyard-slider__nav"></div>
+          <div class="slider-nav slider-nav-black courtyard-slider__nav"></div>
         </div>
       </div>
       <div class="col-12 col-lg-7">
@@ -284,13 +385,72 @@
 </section>
 <!--### SECTION courtyard END ###-->
 
-<!--### SECTION  ###-->
-<section class="">
+<!--### SECTION commercial ###-->
+<section class="commercial bg-accent" id="commercial">
   <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="commercial-img"><img src="img/slide7.jpg" alt=""></div>
+      </div>
+      <div class="col-12 col-lg-7">
+        <div class="commercial-content">
+          <h3>В нашем жилом комплексе вы можете приобрести
+            парковочное место для вашего автомобиля.</h3>
 
+          <div class="box-text">
+            <p>Ознакомиться с планировочным
+              решением паркинга</p>
+
+
+          <a href="#" class="btn btn-accent btn-download">
+            <span class="btn-text">Скачать</span>
+            <span class="btn-icon"><img src="img/download.png" alt=""></span>
+          </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="commercial-box">
+          <h3>В жилом комплексе
+            квартал 55 предусмотрены
+            торговые и офисные
+            помещения, площадью</h3>
+          <div class="area">105 - 245 <span>м<sup>2</sup></span></div>
+          
+          <div class="image"><img src="img/photo1.jpg" alt=""></div>
+
+          <div class="box-text">
+            <p>На первой линии расположены
+              площади для размещения
+              бутиков, ресторанов,
+              торговых галерей</p>
+
+            <p>Коммерческие помещения
+              внутри жилого комплекса
+              ориентированы на сферу услуг,
+              интересных жителям
+              Квартала 55 — фитнес,
+              сфера красоты,
+              забота о здоровье,
+              услуги клининга.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-7">
+        <h2>коммерческая
+          недвижимость</h2>
+
+        <div class="image-max"><img src="img/photo2.jpg" alt=""></div>
+      </div>
+    </div>
   </div>
 </section>
-<!--### SECTION END ###-->
+<!--### SECTION commercial END ###-->
 
 <!--### SECTION contacts ###-->
 <section class="contacts">
@@ -409,7 +569,7 @@
           </div>
         </div>
 
-        <div class="slider-nav why-content-slider__nav"></div>
+        <div class="slider-nav slider-nav-black why-content-slider__nav"></div>
       </div>
       <div class="col-12 col-lg-7">
         <div class="why-slider">
@@ -453,7 +613,7 @@
             <div class="construction-progress__item"><img src="img/slide9.jpg" alt=""></div>
           </div>
         </div>
-        <div class="construction-progress-slider__nav slider-nav"></div>
+        <div class="construction-progress-slider__nav slider-nav-black slider-nav"></div>
       </div>
 
       <div class="col-12 col-lg-5">
@@ -499,7 +659,7 @@
 <!--### SECTION booking END ###-->
 
 <!--### SECTION documents ###-->
-<section class="documents bg-accent">
+<section class="documents bg-accent" id="documents">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-lg-6">
@@ -521,31 +681,34 @@
       <div class="col-12 d-flex flex-wrap align-items-start">
         <div class="documents-box">
           <div class="documents-box__top">
-            <a href="#" class="documents-box__icon"><img src="img/file.png" alt=""></a>
-            <span class="icon-arrow"><img src="img/arrow-bottom.png" alt=""></span>
+            <a href="#collapseExample1" class="documents-box__icon" data-toggle="collapse"><img src="img/file.png"
+                                                                                                alt=""></a>
           </div>
-          <a href="#" class="documents-box__links">ПРОЕКТНАЯ
-            ДЕКЛАРАЦИЯ
-            И ИЗМЕНЕНИЯ</a>
-        </div>
-
-        <div class="documents-box">
-          <div class="documents-box__top">
-            <a href="#" class="documents-box__icon"><img src="img/file.png" alt=""></a>
-            <span class="icon-arrow"><img src="img/arrow-bottom.png" alt=""></span>
+          <div class="documents-box__body collapse show" id="collapseExample1">
+            <a href="#" class="documents-box__links">ПРОЕКТНАЯ
+              ДЕКЛАРАЦИЯ
+              И ИЗМЕНЕНИЯ</a>
           </div>
-          <a href="#" class="documents-box__links">ПРОЕКТНАЯ
-            ДЕКЛАРАЦИЯ
-            И ИЗМЕНЕНИЯ</a>
         </div>
         <div class="documents-box">
           <div class="documents-box__top">
-            <a href="#" class="documents-box__icon"><img src="img/file.png" alt=""></a>
-            <span class="icon-arrow"><img src="img/arrow-bottom.png" alt=""></span>
+            <a href="#collapseExample2" class="documents-box__icon" data-toggle="collapse"><img src="img/file.png"
+                                                                                                alt=""></a>
           </div>
-          <a href="#" class="documents-box__links">ПРОЕКТНАЯ
-            ДЕКЛАРАЦИЯ
-            И ИЗМЕНЕНИЯ</a>
+          <div class="documents-box__body collapse show" id="collapseExample2">
+            <a href="#" class="documents-box__links">РАЗРЕШЕНИЯ <br>
+              НА ВВОД</a>
+          </div>
+        </div>
+        <div class="documents-box">
+          <div class="documents-box__top">
+            <a href="#collapseExample3" class="documents-box__icon" data-toggle="collapse"><img src="img/file.png"
+                                                                                                alt=""></a>
+          </div>
+          <div class="documents-box__body collapse show" id="collapseExample3">
+            <a href="#" class="documents-box__links">ПРОЧИЕ <br>
+              ДОКУМЕНТЫ</a>
+          </div>
         </div>
       </div>
     </div>
@@ -555,7 +718,7 @@
 
 
 <!--### FOOTER  ###-->
-<footer>
+<footer id="contacts">
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex flex-wrap align-items-center">
@@ -576,6 +739,39 @@
 </footer>
 <!--### FOOTER END ###-->
 
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Связаться с нами</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form-callback">
+          <div class="form-group">
+            <label><input type="text" placeholder="Имя" name="name"></label>
+            <label><input type="text" placeholder="e-mail" name="mail"></label>
+          </div>
+          <label>
+            <label><input type="text" placeholder="телефон" name="phone"></label>
+          </label>
+
+          <div class="form-group">
+            <label class="checkbox">
+              <input type="checkbox" name="checkbox" class="inp-check">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">согласен на обработку персональных данных.
+Юридическая информация</span>
+            </label>
+            <button type="submit" class="btn btn-accent">забронировать квартиру</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"

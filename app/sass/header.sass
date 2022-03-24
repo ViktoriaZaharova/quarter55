@@ -79,6 +79,50 @@ header
 
 
 
-/*==========  section  ==========*/
+/*==========  mobile-menu  ==========*/
+.mobile-menu
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  height: 100%
+  overflow-y: auto
+  padding: 30px 20px
+  width: 100%
+  max-width: 290px
+  z-index: 4
+  background: $accent
+  .menu
+    margin: 20px 0
+    li
+      margin: 0 0 15px
+      width: 100%
+  .dropdown-menu
+    min-width: auto
+  .dropdown-item
+    white-space: normal
 
-/*==========  section end  ==========*/
+.btn-close
+  cursor: pointer
+  width: 20px
+  height: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin: 0 0 20px auto
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    background: $accent2
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+
+/*==========  mobile-menu end  ==========*/
