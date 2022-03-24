@@ -100,6 +100,8 @@ header {
     min-width: auto; }
   .mobile-menu .dropdown-item {
     white-space: normal; }
+  .mobile-menu .phone {
+    font-size: 20px; }
 
 .btn-close {
   cursor: pointer;
