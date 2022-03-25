@@ -158,22 +158,27 @@
           flex-direction: column;
   padding: 119px 20px 109px 70px; }
   .plans-content h3 {
-    margin: auto 0 67px;
     font-size: 46.9px;
-    max-width: 455px;
     color: #e4dbd4; }
+
+.plans-description {
+  margin: 100px 0 47px; }
 
 .list-characteristics {
   width: 100%; }
+  .list-characteristics .slick-current {
+    opacity: 1; }
 
 .list-characteristics-item {
   text-align: center;
   text-transform: uppercase;
-  color: rgba(228, 219, 212, 0.25);
+  color: #e4dbd4;
   font-size: 13px;
   margin: 0 72px 0 0;
   max-width: 104px;
-  width: 100%; }
+  width: 100%;
+  opacity: .25;
+  cursor: pointer; }
   .list-characteristics-item:last-child {
     margin: 0; }
   .list-characteristics-item__icon {

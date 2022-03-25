@@ -57,20 +57,28 @@ $('.plans-slider').slick({
     appendArrows: '.plans-slider__nav',
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
-
+    asNavFor: '.plans-description',
 });
+
+$('.plans-description').slick({
+    slidesToShow: 1,
+    fade: true,
+    // asNavFor: '.plans-slider',
+    arrows: false,
+});
+
 
 $('.list-characteristics').slick({
     slidesToShow: 3,
     focusOnSelect: true,
     arrows: false,
     infinite: false,
-    asNavFor: '.plans-slider'
+    asNavFor: '.plans-slider, .plans-description'
 });
 
 $('.variable-project-slider').slick({
     slidesToShow: 1,
-    asNavFor: '.variable-nav',
+    // asNavFor: '.variable-nav',
     prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-left.png" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.png" alt=""></button>',
     appendArrows: '.variable-project-slider__nav'
